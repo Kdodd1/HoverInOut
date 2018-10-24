@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing Ninja</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+	.container{
+
+		width: 1000px;
+	}
+	img{
+		border: 5px solid black;
+		width: 200px;
+		margin: 15px;
+
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("img").hover(function(){
+				var temp = "ninjaLogo.jpg";
+				$(this).attr("src", $(this).attr('alt-src'));
+			}, function(){
+				$(this).attr("src", temp);
+	
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class='container'>
+		<h1>Hover Power</h1>
+		<img src="ninjaLogo.jpg" alt-src="ninja2.jpg">
+		<img src="ninjaLogo.jpg" alt-src="ninja2.jpg">
+		<img src="ninjaLogo.jpg" alt-src="ninja2.jpg">
+		<img src="ninjaLogo.jpg" alt-src="ninja2.jpg">
+		<img src="ninjaLogo.jpg" alt-src="ninja2.jpg">
+		<img src="ninjaLogo.jpg" alt-src="ninja2.jpg">
+		<img src="ninjaLogo.jpg" alt-src="ninja2.jpg">
+		<img src="ninjaLogo.jpg" alt-src="ninja2.jpg">
+
+	</div>
+</body>
+</html>
